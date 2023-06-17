@@ -22,9 +22,10 @@
     p{
         font-size: 16px;
         line-height: 130%;
+        
     }
 
-    img{
+    imgnn{
         padding-right: 15px;
     }
 
@@ -43,11 +44,41 @@
 
     .logo{
         width: 18px;
+        padding-right: 1%;
     }
 
     .links{
         line-height: 110%;
     }
+
+    .container {
+        display: flex; /* Display the image and text in a row */
+        align-items: center; /* Vertically align the content */
+      }
+      
+      .text {
+        margin-left: 10px; /* Add some space between the image and text */
+      }
+
+      .container img {
+        display: block;
+        margin: 0 auto;
+      }
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column; /* Stack elements vertically */
+          align-items: flex-start; /* Adjust alignment for stacked elements */
+        }
+      
+        .text {
+          margin: 10px 0; /* Add some spacing around the text */
+          text-align: justify;
+        }
+
+        .container img {
+            max-width: 100%; /* Optional: Adjust the maximum width of the image */
+          }
+      }
 
 
 </style>
@@ -59,7 +90,7 @@
 
             <h1>Deepak Nayak</h1>
 
-            <p class="links"><img src="mail.jpg" class="logo">Contact  : <a href="mailto:deepakjn2003@gmail.com" target="_blank">deepakjn2003@gmail.com</a>
+            <p class="links"><img src="mail.jpg" class="logo">E-Mail  : <a href="mailto:deepakjn2003@gmail.com" target="_blank" >deepakjn2003@gmail.com</a>
 
             <br><img src="git.png" class="logo">Github : <a href="https://github.com/medeepakjn" target="_blank">github.com/medeepakjn</a>
 
@@ -68,8 +99,17 @@
         </div>
         
             <hr>
-
-        <table>
+            <div class="container">
+                <img src="photo.jpeg" alt="deepak" hight="400" width="150">
+                <div class="text">
+                    <p>My name is <b>Deepak J Nayak</b>, and I am an aspiring professional in the field of Artificial Intelligence and Web Development. I am a dedicated and driven individual with a passion for leveraging technology to solve real-world problems. Currently, I am pursuing a Bachelor's degree in Engineering with a specialization in Artificial Intelligence from BMS Institute of Technology in Bengaluru. Throughout my academic journey, I have gained a solid foundation in machine learning techniques and web development.
+                 <br><br>
+                    What sets me apart is my eagerness to continuously expand my knowledge and skills in these fields. I am a firm believer in lifelong learning and actively keep myself updated with the latest industry trends and technologies.I am currently seeking opportunities to apply my skills and contribute to the advancement of artificial intelligence and web development. I am excited to join a dynamic team where I can make a meaningful impact and continue to grow professionally.
+                    </p>
+                </div>
+            </div>
+              
+        <!-- <table>
             <tr>
                 <td>
                     <img src="photo.jpeg" alt="deepak" hight="400" width="150">
@@ -83,7 +123,7 @@
                 </td>
 
             </tr>
-        </table>
+        </table> -->
 
         <hr>
 
